@@ -2,9 +2,10 @@ name: Development Build
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
     paths-ignore:
       - '*.md'
+  workflow_dispatch:
 jobs:
   build:
     name: release ${{ matrix.target }}
